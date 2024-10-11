@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: #000000;
+	--fg: #ffffff;
+	--gold: #ffd700;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fg);
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.container {
+	@apply px-4 md:px-[2rem] lg:px-[3rem] xl:px-[4rem];
+}
+
+.flex-center {
+	@apply flex justify-center items-center;
+}
+
+.fingerprint-intro {
+	@apply w-[55vw] h-[55vw] lg:w-[40vh] lg:h-[40vh] object-contain relative;
+}
